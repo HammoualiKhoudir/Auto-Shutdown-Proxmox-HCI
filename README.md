@@ -25,7 +25,7 @@ Ensure SSH keys are configured for passwordless access.
 Modify the NODES array in auto_shutdown_pve.sh to match your cluster nodes.
 Deploy the scripts to each node:
 
-scp auto_shutdown_pve.sh root@<NODE>:/opt/script/
-scp suspend_qm_pct.sh root@<NODE>:/opt/script/
+scp auto_shutdown_pve.sh root@pve02:/opt/script/
+scp suspend_qm_pct.sh root@pve02:/opt/script/
 
 Set up a cron job or systemd service to execute the shutdown script periodically
