@@ -18,8 +18,8 @@ Installation & Usage
 
     Clone the repository:
 
-git clone https://github.com/your-repo/autoshutdown-proxmox.git
-cd autoshutdown-proxmox
+git clone https://github.com/HammoualiKhoudir/Auto-Shutdown-Proxmox-HCI.git
+cd Auto-Shutdown-Proxmox-HCI
 
 Ensure SSH keys are configured for passwordless access.
 Modify the NODES array in auto_shutdown_pve.sh to match your cluster nodes.
