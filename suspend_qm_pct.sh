@@ -1,4 +1,4 @@
-# ! /bin/bash
+#!/bin/bash
 # Suspend all VMs
 qm list | grep running | awk -F'[^0-9]*' '$0=$2' | while read -r vm_id; do qm suspend $vm_id --todisk 1; done;
 
