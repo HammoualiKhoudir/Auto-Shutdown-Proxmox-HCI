@@ -1,10 +1,7 @@
 #!/bin/bash
-
 # This script assumes you have SSH keys set up for passwordless login between nodes. 
-
 # Define your Proxmox cluster nodes
 NODES=("pve01" "pve02" "pve03")
-
 
 echo "========================================================================"
 for NODE in "${NODES[@]}"; do
@@ -12,7 +9,6 @@ for NODE in "${NODES[@]}"; do
 	echo "Suspend all VMs and Shutting down all containers on $NODE"
 	ssh root@$NODE '/bin/bash /opt/script/suspend_qm_shutdown_pct.sh'
 done
-
 
 for NODE in "${NODES[@]}"; do
 	echo "Enable ha-manager maintenance on Node: $NODE"
